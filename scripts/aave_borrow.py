@@ -9,6 +9,7 @@ def main():
         get_weth()
     # Need ABI and Address
     lending_pool = get_lending_pool()
+    print(lending_pool)
 
 def get_lending_pool():
     # Get address
@@ -17,4 +18,5 @@ def get_lending_pool():
     )
     lending_pool_address = lending_pool_addresses_provider.getLendingPool()
     # Get ABI
-    
+    lending_pool = interface.ILendingPool(lending_pool_address)
+    return lending_pool
