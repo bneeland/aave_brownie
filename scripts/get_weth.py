@@ -14,6 +14,3 @@ def get_weth():
     tx.wait(1)
     print("Received 0.1 WETH")
     return tx
-
-# https://www.youtube.com/watch?v=M576WGiDBdQ&t=23238s
-# 9:04:50

@@ -16,3 +16,6 @@ def get_account(index=None, id=None):
     if id:
         return accounts.load(id)
     return accounts.add(config["wallets"]["from_key"])
+
+# https://www.youtube.com/watch?v=M576WGiDBdQ&t=23238s
+# 9:36:00
